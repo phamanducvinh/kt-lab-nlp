@@ -12,5 +12,5 @@ for filepath in glob("original/*.json"):
 
     json_modified = json.dumps(json_object);
 
-    with open("modified.txt", "w", encoding = 'utf8') as json_ModifiedFile:
+    with open("modified.txt w", encoding = 'utf8') as json_ModifiedFile:
         json.dump(json_modified, json_ModifiedFile)
