@@ -1,0 +1,70 @@
+{
+  "categories" : [
+    {
+      "category": "business",
+      "path_file": "dataset/Training/business.json"
+    },
+    {
+      "category": "car",
+      "path_file": "dataset/Training/car.json"
+    },
+    {
+      "category": "education",
+      "path_file": "dataset/Training/education.json"
+    },
+    {
+      "category": "health",
+      "path_file": "dataset/Training/health.json"
+    },
+    {
+      "category": "law",
+      "path_file": "dataset/Training/law.json"
+    },
+    {
+      "category": "science",
+      "path_file": "dataset/Training/science.json"
+    },
+    {
+      "category": "sport",
+      "path_file": "dataset/Training/sport.json"
+    },
+    {
+      "category": "travel",
+      "path_file": "dataset/Training/travel.json"
+    }
+  ],
+  "data_prepare" : [
+    {
+      "category": "business",
+      "path_file": "data-prepare/business.json"
+    },
+    {
+      "category": "car",
+      "path_file": "data-prepare/car.json"
+    },
+    {
+      "category": "education",
+      "path_file": "data-prepare/education.json"
+    },
+    {
+      "category": "health",
+      "path_file": "data-prepare/health.json"
+    },
+    {
+      "category": "law",
+      "path_file": "data-prepare/law.json"
+    },
+    {
+      "category": "science",
+      "path_file": "data-prepare/science.json"
+    },
+    {
+      "category": "sport",
+      "path_file": "data-prepare/sport.json"
+    },
+    {
+      "category": "travel",
+      "path_file": "data-prepare/travel.json"
+    }
+  ]
+}

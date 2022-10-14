@@ -5,22 +5,27 @@ import json
 # Get all path of categories
 config = "config.json"
 file_config = open(config)
-data = json.load(file_config);
+data = json.load(file_config)
 
 # Get data
 categories = data["categories"]
 numCategories = len(categories)
-numDocuments = data["documents"]
+
+valid = [
+    "N",
+    "V",
+    "A"
+]
 
 # get valid words in array
 def get_valid_words(content):
-    words = pos_tag(content, format='N')
+    words = pos_tag(content)
     valid_words = []
     for word in words:
         type_of_word = word[1],
         content_of_word = word[0],
 
-        if type_of_word[0] != "CH":
+        if type_of_word[0] in valid:
             if len(content_of_word[0]) > 1:
                 valid_words.append(str.lower(str(content_of_word[0])))
 
@@ -34,6 +39,7 @@ for item in categories:
     documents = data_of_category["documents"]
 
     documents_json = []
+    count = 0;
     for document in documents:
         content = document["content"]
         if len(content) > 1000:
@@ -43,7 +49,10 @@ for item in categories:
                 "words": valid_words
             }
             documents_json.append(obj)
-    with open(f"${category}.json", "w", encoding='utf-8') as f:
+            count = count + 1;
+            if count == 100:
+                break
+    with open(f"data-prepare/{category}.json", "w", encoding='utf-8') as f:
         f.write(json.dumps({
             "documents": documents_json
         }, ensure_ascii=False))

@@ -3,7 +3,7 @@ from underthesea import pos_tag
 import json
 import math
 
-input_content = "Rút kinh nghiệm tổ chức lễ hội bánh dân gian Nam bộ."
+input_content = "Tội phạm sẽ bị trừng trị."
 
 config = "config.json"
 file_config = open(config)
