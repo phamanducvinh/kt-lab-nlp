@@ -10,7 +10,6 @@
   - [Đoàn Văn Nguyên](https://www.facebook.com/profile.php?id=100081785383189)
 
 ## Building Model
-- Dataset
   - Bộ dữ liệu chia thành 2 phần dể train và để test
   - Dữ liệu training được lưu dưới dạng JSON như sau:
     - > [business.json](TF-IDF/dataset/Training/business.json): chứa documents có các chủ đề về kinh doanh
